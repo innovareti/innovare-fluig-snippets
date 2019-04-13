@@ -6,62 +6,50 @@ Para facilitar o desenvolvimento fluig, criamos esse pacote de snippets, assim p
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Como adicionar uma snippet no código
 
-For example if there is an image subfolder under your extension project workspace:
+![Adicionando um Snippets](images/print1.jpg)
 
-\!\[feature X\]\(images/feature-x.png\)
+> Dica: o código dessa extensão está no github em e você pode ajudar a contribuir para esse plugin
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+GitHub: https://github.com/innovareti/innovare-fluig-snippets
 
-## Requirements
+## Requisitos
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Basta instalar e usar
 
-## Extension Settings
+todos os comandos começam com ```fluig-```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Ex: ```fluig-dataset-novo```
 
-For example:
+Esse comando irá gerar a seguinte estrutura
 
-This extension contributes the following settings:
+```
+var dataset = new DatasetBuilder();
+``` 
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+### 0.0.1
 
-## Known Issues
+Primeira versão: temos os seguintes snippets:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+| Comando | Descrição |
+| ------------- |:-------------|
+| fluig-dataset-novo | Novo Dataset |
+| fluig-calendar-jq | script de ativação de campo de calendário(datepicker)  |
+| fluig-input-file-jq | script de ativação de um campo input |
+| fluig-panel-input | Gera um panel html |
+| fluig-input-text | Gera um input text |
+| fluig-calendar-html | gera um input date |
+| fluig-textarea-html | gera um textarea |
+| fluig-zoom-html | gera um campo zoom |
+| fluig-input-file-html | gera um input file |
+| fluig-displayField-atividade | script para pegar a atividade no displayFields |
+| fluig-displayField-numeroProcesso | script para pegar o número do processo no displayfields |
+| fluig-displayField-usuarioLogado | script para buscar o usuário(mátricula) logado no display fields |
+| fluig-displayField-escondeBotaoPrint | script para esconder o botão de impressão |
+| fluig-displayField-setVisibleById | script para esconder um campo pelo id |
+| fluig-enabledFields-setEnabled | script para habilitar um campo ou desabilitar |
+| fluig-enabledFields-setEnabledPaiFilho | script para habilitar/desabilitar campos em pai x filho |
+| fluig-validateForm | script para validação de formulário |
+| fluig-validateForm-paiFilho | script para validação de form pai x filho |
+| fluig-swich-aprovacao | script para habilitar um botão switch |
