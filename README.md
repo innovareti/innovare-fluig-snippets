@@ -14,6 +14,11 @@ Como adicionar uma snippet no código
 
 GitHub: https://github.com/innovareti/innovare-fluig-snippets
 
+## Contribuidores
+
+* Elton Nicolau
+* Valter Ceratti
+
 ## Requisitos
 
 Basta instalar e usar
