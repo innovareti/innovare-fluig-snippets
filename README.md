@@ -53,3 +53,7 @@ Primeira versão: temos os seguintes snippets:
 | fluig-validateForm | script para validação de formulário |
 | fluig-validateForm-paiFilho | script para validação de form pai x filho |
 | fluig-swich-aprovacao | script para habilitar um botão switch |
+
+### 0.0.2 
+
+Adicionando logo
