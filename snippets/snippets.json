@@ -1,0 +1,257 @@
+{
+    "fluig-calendar-jq": {
+        "scope": "javascript,html",
+        "prefix": "fluig-calendar-jq",
+        "body": [
+            "var mySimpleCalendar = FLUIGC.calendar('$1');"
+        ],
+        "description": "jquery calendar fluig"
+    },
+    "fluig-input-file-jq": {
+        "scope": "javascript,html",
+        "prefix": "fluig-input-file-jq",
+        "body": [
+            "$('#anexo').click(function () {",
+            "    $('#anexPag').click();",
+            "    $('#anexPag').change(function () {",
+            "        'var anexo = $('#anexPag').val();'",
+            "         var divindo = anexo.split('\\', 3);",
+            "        $('#resultAnexo').val(divindo[2])",
+            "    });",
+            "});"
+        ],
+        "description": "jquery calendar fluig"
+    },
+    "fluig-panel-input": {
+        "scope": "javascript,html",
+        "prefix": "fluig-panel-input",
+        "body": [
+            "<div class='panel panel-primary'>",
+            "    <div class='panel-heading'>",
+            "        <h3 class='panel-title'><i class='fluigicon fluigicon-user icon-md'></i> Dados do Solicitante</h3>",
+            "    </div>",
+            "    <div class='panel-body'>",
+            "        <div class='col-md-4'>",
+            "            <div class='form-group'>",
+            "                <label for='solicitante'>Solicitante</label>",
+            "                <input type='text' class='form-control' id='solicitante' name='solicitante'>",
+            "            </div>",
+            "        </div>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "panel fluig html"
+    },
+    "fluig-input-text": {
+        "scope": "javascript,html",
+        "prefix": "fluig-input-text",
+        "body": [
+            "<div class='col-md-4'>",
+            "    <div class='form-group'>",
+            "        <label for='solicitante'>Solicitante</label>",
+            "        <input type='text' class='form-control' id='solicitante' name='solicitante'>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "input text fluig html"
+    },
+    "fluig-calendar-html": {
+        "scope": "javascript,html",
+        "prefix": "fluig-calendar-html",
+        "body": [
+            "<div class='col-md-4'>",
+            "    <div class='form-group'>",
+            "         <label for='dtAtual'>Data</label>",
+            "         <input type='text' id='dtAtual' name='dtAtual'/>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "input text fluig html"
+    },
+    "fluig-textarea-html": {
+        "scope": "javascript,html",
+        "prefix": "fluig-textarea-html",
+        "body": [
+            "<div class='col-md-12'>",
+            "    <div class='form-group'>",
+            "         <label for='mtvDespesa'>Motivo Despesa</label>",
+            "         <textarea class='form-control' rows='3' id='mtvDespesa' name='mtvDespesa'></textarea>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "input text fluig html"
+    },
+    "fluig-zoom-html": {
+        "scope": "javascript,html",
+        "prefix": "fluig-zoom-html",
+        "body": [
+            "<div class='col-md-4'>",
+            "    <div class='form-group'>",
+            "        <label for='dtInicial'>Data Inicial</label>",
+            "        <input",
+            "            type='zoom'",
+            "            id = 'c7_total'",
+            "            name='c7_total'",
+            "            data-zoom=$1{",
+            "                'displayKey':'colleagueName',",
+            "                'datasetId':'colleague',",
+            "                'maximumSelectionLength':'2',",
+            "                'placeholder':'Escolha o usuário',",
+            "                'fields':[",
+            "                    {",
+            "                        'field':'colleagueId',",
+            "                        'label':'ID'",
+            "                        },{",
+            "                        'field':'colleagueName',",
+            "                        'label':'Nome',",
+            "                        'standard':'true'",
+            "                        },{",
+            "                        'field':'login',",
+            "                        'label':'Login'",
+            "                    }",
+            "                ]",
+            "            }$1",
+            "        />",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "input zoom fluig html"
+    },
+    "fluig-input-file-html": {
+        "scope": "javascript,html",
+        "prefix": "fluig-input-file-html",
+        "body": [
+            "<div class='col-md-6'>",
+            "    <div class='form-group'>",
+            "        <label for='anexPag'>Anexo do Pagamento</label><br>",
+            "        <button type='button' id='anexo' name='anexo' class='btn btn-primary'>Primary</button>",
+            "        <input id='resultAnexo' name='resultAnexo' placeholder='Nenhum arquivo selecionado' style='border: none; width: 50%; outline: none; box-shadow: none;' readonly>",
+            "        <input class='form-control' type='file' id='anexPag' name='anexPag' style='display: none;'>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "input type file html"
+    },
+    "fluig-displayField-atividade": {
+        "scope": "javascript,html",
+        "prefix": "fluig-displayField-atividade",
+        "body": [
+            "// Verifica atividade atual do Workflow",
+            "var atividade = getValue('WKNumState');",
+            "form.setValue('atividade', atividade);"
+        ],
+        "description": "displayFields chamando atividade fluig"
+    },
+    "fluig-displayField-numeroProcesso": {
+        "scope": "javascript,html",
+        "prefix": "fluig-displayField-numeroProcesso",
+        "body": [
+            "// var numeroProcesso = getValue('WKNumProces');",
+            "if (form.getValue('nr') == 0) {",
+            "    form.setValue('nr', 'Não Criado');",
+            "    form.setValue('nrOculta', 'Não Criado');",
+            "} else {",
+            "    form.setValue('nrOculta', getValue('WKNumProces'));",
+            "    form.setValue('nr', getValue('WKNumProces'));",
+            "}"
+        ],
+        "description": "displayFields numeroProcesso fluig"
+    },
+    "fluig-displayField-usuarioLogado": {
+        "scope": "javascript,html",
+        "prefix": "fluig-displayField-usuarioLogado",
+        "body": [
+            "// pega o usuario logado",
+            "var usuario = getValue('WKUser');"
+        ],
+        "description": "displayFields usuarioLogado fluig"
+    },
+    "fluig-displayField-escondeBotaoPrint": {
+        "scope": "javascript,html",
+        "prefix": "fluig-displayField-escondeBotaoPrint",
+        "body": [
+            "// esconder botão imprimir",
+            "form.setHidePrintLink(true);"
+        ],
+        "description": "displayFields escondeBotaoPrint fluig"
+    },
+    "fluig-displayField-setVisibleById": {
+        "scope": "javascript,html",
+        "prefix": "fluig-displayField-setVisibleById",
+        "body": [
+            "form.setVisibleById('$1', false);"
+        ],
+        "description": "displayFields setVisibleById fluig"
+    },
+    "fluig-enabledFields-setEnabled": {
+        "scope": "javascript,html",
+        "prefix": "fluig-enabledFields-setEnabled",
+        "body": [
+            "form.setEnabled('$1', false);"
+        ],
+        "description": "enabledFields-setEnabled fluig"
+    },
+    "fluig-enabledFields-setEnabledPaiFilho": {
+        "scope": "javascript,html",
+        "prefix": "fluig-enabledFields-setEnabledPaiFilho",
+        "body": [
+            "var indexes = form.getChildrenIndexes(\"nomeTabela\");",
+            "for (var i = 0; i < indexes.length; i++) {",
+            "    form.setEnabled('campo1___' + indexes[i], false);",            
+            "}"
+        ],
+        "description": "enabledFields-setEnabledPaiFilho fluig"
+    },
+    "fluig-validateForm": {
+        "scope": "javascript,html",
+        "prefix": "fluig-validateForm",
+        "body": [
+            "if (atividade == 7) {",
+            "    if (form.getValue('nomeCampo') == '') {",
+            "        throw 'Não foi selecionada a aprovação.'",
+            "    }",
+            "}"
+        ],
+        "description": "validateForm fluig"
+    },
+    "fluig-validateForm-paiFilho": {
+        "scope": "javascript,html",
+        "prefix": "fluig-validateForm-paiFilho",
+        "body": [
+            "var indexes = form.getChildrenIndexes('etapasDoProjeto');",
+            "if (atividade == 19) {",
+            "    if (indexes.length < 1) {",
+            "        throw 'Não foram informados registros na tabela de Etapas do Projeto';",
+            "    } else {",
+            "        for (var i = 0; i < indexes.length; i++) {",
+            "            if (form.getValue('nomeEtapa___' + indexes[i]) == '') {",
+            "                throw 'Nome da etapa não foi informado.'",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+        ],
+        "description": "validateForm-paiFilho fluig"
+    },
+    "fluig-swich-aprovacao": {
+        "scope": "javascript,html",
+        "prefix": "fluig-swich-aprovacao",
+        "body": [
+            "<div class='form-group col-md-1'>",
+            "    <div class='switch switch-success'>",
+            "        <label for='aprova'>Aprova</label>",
+            "        <input class='switch-input' type='radio' value='green' name='aprovacao' id='aprova'/>",
+            "        <label class='switch-button' for='aprova'>Toggle</label>",
+            "    </div>",
+            "</div>",
+            "<div class='form-group col-md-1'>",
+            "    <div class='switch switch-danger'>",
+            "        <label for='reprova'>Reprova</label>",
+            "        <input class='switch-input' type='radio' value='red' name='aprovacao' id='reprova'/>",
+            "        <label class='switch-button' for='reprova'>Toggle</label>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "validateForm-paiFilho fluig"
+    }
+}
