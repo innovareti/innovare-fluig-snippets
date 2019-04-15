@@ -7,6 +7,29 @@
         ],
         "description": "Log output to console"
     },
+    "fluig-get-dataset": {
+        "scope": "javascript",
+        "prefix": "fluig-get-dataset",
+        "body": [
+            "var dataset = new DatasetFactory.getDataset('$1','$2','$3','$4');"
+        ],
+        "description": "Simples consulta a Dataset"
+    },
+    "fluig-extData": {
+        "scope": "javascript",
+        "prefix": "fluig-extData",
+        "body": [
+            "$.ajax({",
+            "    url: '/api/public/2.0/users/getCurrent',   ",
+            "    type: 'GET',                               ",
+            "}).done(function(data) {                       ",
+            "    var user_fluig = data;                 ",
+            "    var extras     = user_fluig.content.extData;",
+            "    console.log( extras );",
+            "});"
+        ],
+        "description": "Logged user ExtData - Log output to console"
+    },
     "fluig-calendar-jq": {
         "scope": "javascript,HTML",
         "prefix": "fluig-calendar-jq",
