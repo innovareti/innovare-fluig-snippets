@@ -13,7 +13,11 @@
     "contributes": {
         "snippets": [
             {
-                "language": "javascript,HTML",
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
                 "path": "./snippets/snippets.json"
             }
         ]
