@@ -3,7 +3,7 @@
     "name": "innovare-fluig-snippets",
     "displayName": "innovare-fluig-snippets",
     "description": "Pacote de Snippets para agilizar o desenvolvimento fluig",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.33.0"
     },
@@ -13,7 +13,11 @@
     "contributes": {
         "snippets": [
             {
-                "language": "javascript,HTML",
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
                 "path": "./snippets/snippets.json"
             }
         ]

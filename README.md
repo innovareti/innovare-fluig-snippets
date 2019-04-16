@@ -66,3 +66,12 @@ Primeira versão: temos os seguintes snippets:
 ### 0.0.2 
 
 Adicionando logo
+
+### 0.0.3
+
+Adiconando suporte para HTML
+
+### 0.0.4 
+
+Corrigindo bug que fazia os snippets não funcionarem
+
