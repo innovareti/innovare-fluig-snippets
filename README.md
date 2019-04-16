@@ -18,6 +18,7 @@ GitHub: https://github.com/innovareti/innovare-fluig-snippets
 
 * Elton Nicolau
 * Valter Ceratti
+* Luiz Postal
 
 ## Requisitos
 
@@ -40,6 +41,8 @@ Primeira versão: temos os seguintes snippets:
 | Comando | Descrição |
 | ------------- |:-------------|
 | fluig-dataset-novo | Novo Dataset |
+| fluig-get-dataset | script para chamada de Dataset Simples |
+| fluig-extData | Consultar os dados adicionais do usuário logado no Fluig |
 | fluig-calendar-jq | script de ativação de campo de calendário(datepicker)  |
 | fluig-input-file-jq | script de ativação de um campo input |
 | fluig-panel-input | Gera um panel html |
@@ -59,6 +62,7 @@ Primeira versão: temos os seguintes snippets:
 | fluig-validateForm-paiFilho | script para validação de form pai x filho |
 | fluig-swich-aprovacao | script para habilitar um botão switch |
 
+
 ### 0.0.2 
 
 Adicionando logo
@@ -70,3 +74,4 @@ Adiconando suporte para HTML
 ### 0.0.4 
 
 Corrigindo bug que fazia os snippets não funcionarem
+
