@@ -1,9 +1,21 @@
 # Change Log
 
-All notable changes to the "innovare-fluig-snippets" extension will be documented in this file.
+### 0.0.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Primeira versão: temos os snippets iniciais
 
-## [Unreleased]
+### 0.0.2 
 
-- Initial release
+Adicionando logo
+
+### 0.0.3
+
+Adiconando suporte para HTML
+
+### 0.0.4 
+
+Corrigindo bug que fazia os snippets não funcionarem
+
+### 0.0.5
+
+Add Snippet de Consulta de Dataset (Contribuição do [lhpostal](https://github.com/lhpostal))

@@ -34,10 +34,6 @@ Esse comando irá gerar a seguinte estrutura
 var dataset = new DatasetBuilder();
 ``` 
 
-### 0.0.1
-
-Primeira versão: temos os seguintes snippets:
-
 | Comando | Descrição |
 | ------------- |:-------------|
 | fluig-dataset-novo | Novo Dataset |
@@ -61,17 +57,7 @@ Primeira versão: temos os seguintes snippets:
 | fluig-validateForm | script para validação de formulário |
 | fluig-validateForm-paiFilho | script para validação de form pai x filho |
 | fluig-swich-aprovacao | script para habilitar um botão switch |
+| fluig-get-dataset | Script de busca em dataset |
 
 
-### 0.0.2 
-
-Adicionando logo
-
-### 0.0.3
-
-Adiconando suporte para HTML
-
-### 0.0.4 
-
-Corrigindo bug que fazia os snippets não funcionarem
 
