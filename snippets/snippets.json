@@ -3,7 +3,7 @@
         "scope": "javascript",
         "prefix": "fluig-dataset-novo",
         "body": [
-            "var dataset = new DatasetBuilder();"
+            "var dataset = DatasetBuilder.newDataset();"
         ],
         "description": "Log output to console"
     },
