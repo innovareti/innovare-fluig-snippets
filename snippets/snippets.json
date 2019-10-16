@@ -279,5 +279,37 @@
             "</div>"
         ],
         "description": "validateForm-paiFilho fluig"
+    },
+    "fluig-data-atual": {
+        "scope": "javascript, html",
+        "prefix": "fluig-data-atual",
+        "body": [
+            "var data = new Date()",
+            "var dia = data.getDate()",
+            "if (dia < 10) {",
+            "    dia = \"0\" + dia;",
+            "}",
+            "var mes = data.getMonth() + 1",
+            "if (mes < 10) {",
+            "    mes = \"0\" + mes;",
+            "}",
+            "var ano = data.getFullYear()",
+            "var dataAtual = dia + \"/\" + mes + \"/\" + ano",
+            ""
+        ],
+        "description": "fluig-data-atual"
+    },
+    "fluig-toast": {
+        "scope": "javascript, html",
+        "prefix": "fluig-toast",
+        "body": [
+            "FLUIGC.toast({",
+            "    title: 'Atenção!'",
+            "    message: 'Mensagem.'",
+            "    type: 'warning'",
+            "    timeout: 'slow'",
+            "});"
+        ],
+        "description": "FLUIGC.toast fluig"
     }
 }

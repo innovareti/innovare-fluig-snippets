@@ -3,7 +3,7 @@
     "name": "innovare-fluig-snippets",
     "displayName": "innovare-fluig-snippets",
     "description": "Pacote de Snippets para agilizar o desenvolvimento fluig",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.33.0"
     },
@@ -23,8 +23,8 @@
         ]
     },
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/innovareti/innovare-fluig-snippets"
+        "type": "git",
+        "url": "https://github.com/innovareti/innovare-fluig-snippets"
     },
     "icon": "images/logo.png"
 }

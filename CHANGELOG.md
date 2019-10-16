@@ -19,3 +19,7 @@ Corrigindo bug que fazia os snippets não funcionarem
 ### 0.0.5
 
 Add Snippet de Consulta de Dataset (Contribuição do [lhpostal](https://github.com/lhpostal))
+
+### 0.0.6
+
+Novo snippet para buscar a data atual
