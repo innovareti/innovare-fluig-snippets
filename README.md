@@ -61,6 +61,8 @@ var dataset = new DatasetBuilder();
 | fluig-swich-aprovacao | script para habilitar um botão switch |
 | fluig-get-dataset | Script de busca em dataset |
 | fluig-data-atual | Script que retorna uma data atual no formato Brasileiro dd/mm/yyyy |
+| fluig-filter | Script de utilização do metodo filter em widgets |
+| fluig-comparacao-data | Script de comparação entre duas datas aonde data final nunca é menor que data inicio e validação de datas inválidas |
 
 
 
