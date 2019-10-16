@@ -284,5 +284,19 @@
             "</div>"
         ],
         "description": "validateForm-paiFilho fluig"
+    },
+    "fluig-toast": {
+        "scope": "javascript, html",
+        "prefix": "fluig-toast",
+        "body": [
+            "FLUIGC.toast({",
+            "    title: 'Atenção!'",
+            "    message: 'Mensagem.'",
+            "    type: 'warning'",
+            "    timeout: 'slow'",
+            "});"
+        ],
+        "description": "FLUIGC.toast fluig"
+
     }
 }
