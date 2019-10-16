@@ -43,9 +43,9 @@
         "prefix": "fluig-input-file-jq",
         "body": [
             "$('#anexo').click(function () {",
-            "    $('#anexPag').click();",
-            "    $('#anexPag').change(function () {",
-            "        'var anexo = $('#anexPag').val();'",
+            "    $('#$1).click();",
+            "    $('#$1).change(function () {",
+            "        'var anexo = $('#$1).val();'",
             "         var divindo = anexo.split('\\', 3);",
             "        $('#resultAnexo').val(divindo[2])",
             "    });",
@@ -59,13 +59,13 @@
         "body": [
             "<div class='panel panel-primary'>",
             "    <div class='panel-heading'>",
-            "        <h3 class='panel-title'><i class='fluigicon fluigicon-user icon-md'></i> Dados do Solicitante</h3>",
+            "        <h3 class='panel-title'><i class='fluigicon fluigicon-user icon-sm'></i> Texto Panel</h3>",
             "    </div>",
             "    <div class='panel-body'>",
             "        <div class='col-md-4'>",
             "            <div class='form-group'>",
-            "                <label for='solicitante'>Solicitante</label>",
-            "                <input type='text' class='form-control' id='solicitante' name='solicitante'>",
+            "                <label for='$1>input</label>",
+            "                <input type='text' class='form-control' id='$1 name=''$1''>",
             "            </div>",
             "        </div>",
             "    </div>",
@@ -79,8 +79,8 @@
         "body": [
             "<div class='col-md-4'>",
             "    <div class='form-group'>",
-            "        <label for='solicitante'>Solicitante</label>",
-            "        <input type='text' class='form-control' id='solicitante' name='solicitante'>",
+            "        <label for='$1>input</label>",
+            "        <input type='text' class='form-control' id='$1 name='$1>",
             "    </div>",
             "</div>"
         ],
@@ -92,8 +92,8 @@
         "body": [
             "<div class='col-md-4'>",
             "    <div class='form-group'>",
-            "         <label for='dtAtual'>Data</label>",
-            "         <input type='text' id='dtAtual' name='dtAtual'/>",
+            "         <label for='$1>Data</label>",
+            "         <input type='text' id='$1 name='$1/>",
             "    </div>",
             "</div>"
         ],
@@ -105,8 +105,8 @@
         "body": [
             "<div class='col-md-12'>",
             "    <div class='form-group'>",
-            "         <label for='mtvDespesa'>Motivo Despesa</label>",
-            "         <textarea class='form-control' rows='3' id='mtvDespesa' name='mtvDespesa'></textarea>",
+            "         <label for='$1>TextArea</label>",
+            "         <textarea class='form-control' rows='3' id='$1 name='$1></textarea>",
             "    </div>",
             "</div>"
         ],
@@ -118,12 +118,12 @@
         "body": [
             "<div class='col-md-4'>",
             "    <div class='form-group'>",
-            "        <label for='dtInicial'>Data Inicial</label>",
+            "        <label for='$1>Data Inicial</label>",
             "        <input",
             "            type='zoom'",
-            "            id = 'c7_total'",
-            "            name='c7_total'",
-            "            data-zoom=$1{",
+            "            id = '$1'",
+            "            name='$1'",
+            "            data-zoom=$2{",
             "                'displayKey':'colleagueName',",
             "                'datasetId':'colleague',",
             "                'maximumSelectionLength':'2',",
@@ -141,7 +141,7 @@
             "                        'label':'Login'",
             "                    }",
             "                ]",
-            "            }$1",
+            "            }$2",
             "        />",
             "    </div>",
             "</div>"
@@ -154,10 +154,10 @@
         "body": [
             "<div class='col-md-6'>",
             "    <div class='form-group'>",
-            "        <label for='anexPag'>Anexo do Pagamento</label><br>",
-            "        <button type='button' id='anexo' name='anexo' class='btn btn-primary'>Primary</button>",
-            "        <input id='resultAnexo' name='resultAnexo' placeholder='Nenhum arquivo selecionado' style='border: none; width: 50%; outline: none; box-shadow: none;' readonly>",
-            "        <input class='form-control' type='file' id='anexPag' name='anexPag' style='display: none;'>",
+            "        <label for='$1'>Anexo do Pagamento</label><br>",
+            "        <button type='button' id='$2' name='$2' class='btn btn-primary'>Primary</button>",
+            "        <input id='$3' name='$3' placeholder='Nenhum arquivo selecionado' style='border: none; width: 50%; outline: none; box-shadow: none;' readonly>",
+            "        <input class='form-control' type='file' id='$1 name='$1' style='display: none;'>",
             "    </div>",
             "</div>"
         ],
@@ -177,13 +177,11 @@
         "scope": "javascript, html",
         "prefix": "fluig-displayField-numeroProcesso",
         "body": [
-            "// var numeroProcesso = getValue('WKNumProces');",
-            "if (form.getValue('nr') == 0) {",
-            "    form.setValue('nr', 'Não Criado');",
-            "    form.setValue('nrOculta', 'Não Criado');",
+            "var numeroProcesso = getValue('WKNumProces');",
+            "if (form.getValue('$1') == 0) {",
+            "    form.setValue('$1', 'Não Criado');",
             "} else {",
-            "    form.setValue('nrOculta', getValue('WKNumProces'));",
-            "    form.setValue('nr', getValue('WKNumProces'));",
+            "    form.setValue('$1', numeroProcesso);",
             "}"
         ],
         "description": "displayFields numeroProcesso fluig"
@@ -193,7 +191,8 @@
         "prefix": "fluig-displayField-usuarioLogado",
         "body": [
             "// pega o usuario logado",
-            "var usuario = getValue('WKUser');"
+            "var usuario = getValue('WKUser');",
+            "form.setValue('$1', usuario);"
         ],
         "description": "displayFields usuarioLogado fluig"
     },
@@ -228,7 +227,7 @@
         "body": [
             "var indexes = form.getChildrenIndexes(\"nomeTabela\");",
             "for (var i = 0; i < indexes.length; i++) {",
-            "    form.setEnabled('campo1___' + indexes[i], false);",
+            "    form.setEnabled('$1___' + indexes[i], false);",
             "}"
         ],
         "description": "enabledFields-setEnabledPaiFilho fluig"
@@ -237,11 +236,9 @@
         "scope": "javascript, html",
         "prefix": "fluig-validateForm",
         "body": [
-            "if (atividade == 7) {",
-            "    if (form.getValue('nomeCampo') == '') {",
+            "    if (form.getValue('$1') == '') {",
             "        throw 'Não foi selecionada a aprovação.'",
-            "    }",
-            "}"
+            "    }"
         ],
         "description": "validateForm fluig"
     },
@@ -249,8 +246,7 @@
         "scope": "javascript, html",
         "prefix": "fluig-validateForm-paiFilho",
         "body": [
-            "var indexes = form.getChildrenIndexes('etapasDoProjeto');",
-            "if (atividade == 19) {",
+            "var indexes = form.getChildrenIndexes('\"nomeTabela\"');",
             "    if (indexes.length < 1) {",
             "        throw 'Não foram informados registros na tabela de Etapas do Projeto';",
             "    } else {",
@@ -259,8 +255,7 @@
             "                throw 'Nome da etapa não foi informado.'",
             "            }",
             "        }",
-            "    }",
-            "}"
+            "    }"
         ],
         "description": "validateForm-paiFilho fluig"
     },
@@ -270,16 +265,16 @@
         "body": [
             "<div class='form-group col-md-1'>",
             "    <div class='switch switch-success'>",
-            "        <label for='aprova'>Aprova</label>",
-            "        <input class='switch-input' type='radio' value='green' name='aprovacao' id='aprova'/>",
-            "        <label class='switch-button' for='aprova'>Toggle</label>",
+            "        <label for='$1'>Aprova</label>",
+            "        <input class='switch-input' type='radio' value='green' name='$2' id='$1'/>",
+            "        <label class='switch-button' for='$1'>Toggle</label>",
             "    </div>",
             "</div>",
             "<div class='form-group col-md-1'>",
             "    <div class='switch switch-danger'>",
-            "        <label for='reprova'>Reprova</label>",
-            "        <input class='switch-input' type='radio' value='red' name='aprovacao' id='reprova'/>",
-            "        <label class='switch-button' for='reprova'>Toggle</label>",
+            "        <label for='$3'>Reprova</label>",
+            "        <input class='switch-input' type='radio' value='red' name='$2' id='$3'/>",
+            "        <label class='switch-button' for='$3'>Toggle</label>",
             "    </div>",
             "</div>"
         ],
