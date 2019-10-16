@@ -58,6 +58,7 @@ var dataset = new DatasetBuilder();
 | fluig-validateForm-paiFilho | script para validação de form pai x filho |
 | fluig-swich-aprovacao | script para habilitar um botão switch |
 | fluig-get-dataset | Script de busca em dataset |
+| fluig-data-atual | Script que retorna uma data atual no formato Brasileiro dd/mm/yyyy |
 
 
 
