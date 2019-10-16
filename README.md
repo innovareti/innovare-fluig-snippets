@@ -19,6 +19,8 @@ GitHub: https://github.com/innovareti/innovare-fluig-snippets
 * Elton Nicolau
 * Valter Ceratti
 * Luiz Postal
+* Daniel Cabral
+* Jorge Maicon
 
 ## Requisitos
 
