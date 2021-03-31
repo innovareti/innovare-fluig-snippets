@@ -23,3 +23,11 @@ Add Snippet de Consulta de Dataset (Contribuição do [lhpostal](https://github.
 ### 0.0.6
 
 Novo snippet para buscar a data atual
+### 0.0.7
+
+Novo snippet para incluir createConstraint
+Novo snippet para Criar modal
+Novo snippet para Criar tabela Pai x Filho
+Novo snippet para Criar tabela Pai x Filho sem o botão de Adicionar
+Novo snippet para Criar tabela Pai x Filho sem o botão de Excluir
+Novo snippet para Criar tabela Pai x Filho sem o botão de Excluir e sem o botão de Adicionar
