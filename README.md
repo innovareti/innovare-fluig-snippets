@@ -20,6 +20,7 @@ GitHub: https://github.com/innovareti/innovare-fluig-snippets
 * Valter Ceratti
 * Luiz Postal
 * Daniel Cabral
+* Jorge Brigliadori
 
 
 ## Requisitos
@@ -40,6 +41,7 @@ var dataset = new DatasetBuilder();
 | ------------- |:-------------|
 | fluig-dataset-novo | Novo Dataset |
 | fluig-get-dataset | script para chamada de Dataset Simples |
+| fluig-dataset-consulta-banco | Código completo para um dataset que é populado com os resultados de uma query SQL. |
 | fluig-extData | Consultar os dados adicionais do usuário logado no Fluig |
 | fluig-calendar-jq | script de ativação de campo de calendário(datepicker)  |
 | fluig-input-file-jq | script de ativação de um campo input |
