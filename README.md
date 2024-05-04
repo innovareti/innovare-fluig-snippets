@@ -21,7 +21,7 @@ GitHub: https://github.com/innovareti/innovare-fluig-snippets
 * Luiz Postal
 * Daniel Cabral
 * Jorge Brigliadori
-
+* Eduardo Vantini 
 
 ## Requisitos
 
