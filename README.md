@@ -63,6 +63,12 @@ var dataset = new DatasetBuilder();
 | fluig-data-atual | Script que retorna uma data atual no formato Brasileiro dd/mm/yyyy |
 | fluig-filter | Script de utilização do metodo filter em widgets |
 | fluig-comparacao-data | Script de comparação entre duas datas aonde data final nunca é menor que data inicio e validação de datas inválidas |
+| fluig-dataset-constraint | Incluí uma constraint para busca em um dataset |
+| fluig-modal | Incluir script para inserir uma janela modal |
+| fluig-PaiFilho | Incluir tabela Pai x Filho |
+| fluig-PaiFilho-noAddButton | Incluir tabela Pai x Filho sem botão Adicionar |
+| fluig-PaiFilho-noDeleteButton | Incluir tabela Pai x Filho sem o botão Excluir |
+| fluig-PaiFilho-noButtons | Incluir tabela Pai x Filho sem o botão Excluir e sem o botão Adicionar |
 
 
 
