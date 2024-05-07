@@ -7,13 +7,54 @@
         ],
         "description": "Log output to console"
     },
-    "fluig-get-dataset": {
+    "fluig-get-dataset-unico-registro": {
         "scope": "javascript",
-        "prefix": "fluig-get-dataset",
+        "prefix": "fluig-get-dataset-unico-registro",
         "body": [
-            "var dataset = new DatasetFactory.getDataset('$1','$2','$3','$4');"
+            "// Constraint utilizada para filtrar os valores do dataset",
+            "var c1 = DatasetFactory.createConstraint('nome_constraint', 'valor_constraint', 'valor_constraint', ConstraintType.MUST);",
+
+            "// Chamada do dataset",
+            "var dataset = DatasetFactory.getDataset('codigo_dataset', null, [c1], null);",
+
+            "// Validação de registros do dataset",
+            "if (dataset.values.length > 0) {",
+
+                "// Exemplo de uso do registro do dataset",
+                "$('#nomeUsuario').val(dataset.values[0].nome)",
+
+            "}"
         ],
-        "description": "Simples consulta a Dataset"
+        "description": "Script para chamada de Dataset de um só registro"
+    },
+    "fluig-get-dataset-multiplo-registro": {
+        "scope": "javascript",
+        "prefix": "fluig-get-dataset-multiplo-registro",
+        "body": [
+            "// Constraint utilizada para filtrar os valores do dataset",
+            "var c1 = DatasetFactory.createConstraint('nome_constraint', 'valor_constraint', 'valor_constraint', ConstraintType.MUST);",
+
+            "// Chamada do dataset",
+            "var dataset = DatasetFactory.getDataset('codigo_dataset', null, [c1], null, null);",
+
+            "// Loop para percorrer todos os registros do dataset",
+            "for (var i = 0; i < dataset.values.length; i++) {",
+
+                "// Adiciona uma linha em uma tabela paiXfilho e salva o ID da linha atual.",
+                "var row = wdkAddChild('codigoTabela');",
+                "$('td input').keydown(function (e) {",
+                    "if (e.keyCode == 13) {",
+                    "e.preventDefault();",
+                    "return false;",
+                    "}",
+                "});",
+
+                "// Adiciona o valor no campo da linha atual, identificado pelo id da linha.",
+                "$('#produto___' + row).val(dataset.values[i].produto);",
+  
+            "}"
+        ],
+        "description": "Script para chamada de Dataset com múltiplos registros"
     },
     "fluig-dataset-consulta-banco":{
         "scope":"javascript",
@@ -594,6 +635,42 @@
           "</div>"
         ],
         "description": "fluig-showCamera-html"
+      },
+      "fluig-envio-email-personalizado": {
+        "scope": "javascript",
+        "prefix": "fluig-envio-email-personalizado",
+        "body": [
+            "// Valores que serão utilizados no email",
+            "var idFluig = getValue('WKNumProces') + '';",
+            "var colaborador = hAPI.getCardValue('colaborador');",
+
+            "// Campo do formulário com todos os endereços de email dos destinatários, separados por ponto e virgula.",
+            "var enderecosDeEmail = hAPI.getCardValue('enderecosDeEmail');",
+
+            "var parametros = new java.util.HashMap();",
+
+            "// Adição de informações nos parâmetros do email",
+            "parametros.put('ID_FLUIG', idFluig); ",
+            "parametros.put('COLABORADOR', colaborador);",
+
+            "// Adição do assunto do email",
+            "parametros.put('subject', 'Pagamento Efetuado para a solicitação ' + idfluig + ' - ' + colaborador);",
+
+            "var destinatarios = new java.util.ArrayList();",
+
+            "// Separa os endereços de email pelo ponto e virgula.",
+            "var emails = emails.split(';')",
+
+            "// Para cada email identificado, uma posição é criada no array de destinatários",
+            "for (var i = 0; i < emails.length; i++) {",
+            "    destinatarios.add(emails[i]);",
+            "}",
+
+            "// Chamada da função de envio de email, com os parâmetros (Matrícula do Usuário Remetente, Template de Email HTML, Parâmetros, Destinatários, Formato do Email)",
+            "notifier.notify('fluig_email', 'tpl_confirmacao_pgto', parametros, destinatarios, 'text/html');"
+
+        ],
+        "description": "Script para envio de email personalizado em eventos de processo. "
       }
   
   }

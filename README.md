@@ -2,7 +2,7 @@
 
 Bem vindo ao Innovare fluig snippets
 
-Para facilitar o desenvolvimento fluig, criamos esse pacote de snippets, assim poderemos escrever menos código e tomar mais café :)
+Para facilitar o desenvolvimento fluig, criamos esse pacote de snippets, assim poderemos escrever menos código e beber mais café :)
 
 ## Features
 
@@ -37,10 +37,13 @@ Esse comando irá gerar a seguinte estrutura
 var dataset = new DatasetBuilder();
 ``` 
 
+## Comandos Disponíveis
+
 | Comando | Descrição |
 | ------------- |:-------------|
 | fluig-dataset-novo | Novo Dataset |
-| fluig-get-dataset | script para chamada de Dataset Simples |
+| fluig-get-dataset-unico-registro | Script para chamada de Dataset de um só registro |
+| fluig-get-dataset-multiplo-registro | Script para chamada de Dataset com múltiplos registros |
 | fluig-dataset-consulta-banco | Código completo para um dataset que é populado com os resultados de uma query SQL. |
 | fluig-extData | Consultar os dados adicionais do usuário logado no Fluig |
 | fluig-calendar-jq | script de ativação de campo de calendário(datepicker)  |
@@ -65,6 +68,7 @@ var dataset = new DatasetBuilder();
 | fluig-data-atual | Script que retorna uma data atual no formato Brasileiro dd/mm/yyyy |
 | fluig-filter | Script de utilização do metodo filter em widgets |
 | fluig-comparacao-data | Script de comparação entre duas datas aonde data final nunca é menor que data inicio e validação de datas inválidas |
+| fluig-envio-email-personalizado | Script para envio de email personalizado em eventos de processo |
 
 
 
