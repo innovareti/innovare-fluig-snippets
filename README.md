@@ -69,6 +69,9 @@ var dataset = new DatasetBuilder();
 | fluig-filter | Script de utilização do metodo filter em widgets |
 | fluig-comparacao-data | Script de comparação entre duas datas aonde data final nunca é menor que data inicio e validação de datas inválidas |
 | fluig-envio-email-personalizado | Script para envio de email personalizado em eventos de processo |
+| fluig-selected-zoom-item | Script para realizar ações ao selecionar um registro em um campo Zoom. |
+| fluig-removed-zoom-item | Script para realizar ações ao remover um registro em um campo Zoom. |
+
 
 
 

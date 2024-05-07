@@ -671,6 +671,30 @@
 
         ],
         "description": "Script para envio de email personalizado em eventos de processo. "
+      },
+      "fluig-selected-zoom-item":{
+        "scope": "javascript",
+        "prefix": "fluig-selected-zoom-item",
+        "body": [
+            "function setSelectedZoomItem(selectedItem) {",
+            "    if (selectedItem.inputId == 'produto') {",
+            "       $('#preco').val(selectedItem.PRECO)",
+                "}",
+            "}"
+        ],
+        "description": "Script para realizar ações ao selecionar um registro em um campo Zoom."
+      },
+      "fluig-removed-zoom-item":{
+        "scope": "javascript",
+        "prefix": "fluig-removed-zoom-item",
+        "body": [
+            "function removedZoomItem(removedItem) {",
+            "    if(removedItem.inputId == 'produto'){",
+            "        $('#preco').val('')",
+            "    }",
+            "}"   
+        ],
+        "description": "Script para realizar ações ao remover um registro em um campo Zoom."
       }
   
   }
