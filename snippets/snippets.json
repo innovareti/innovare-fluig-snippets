@@ -1,4 +1,121 @@
 {
+    "fluig-PaiFilho-noButtons": {
+        "scope": "javascript",
+        "prefix": "fluig-PaiFilho-noButtons",
+        "body": [
+           "<table tablename='table-name' class='table' noaddbutton='true' nodeletebutton='true'>",
+           "    <thead>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    <thead>",
+           "    <tbody>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    </tbody>",
+           "</table>"
+        ],
+        "description": "Cria tabela Pai x Filho sem o botão de Adicionar e sem o botão de Excluir"
+    },
+    "fluig-PaiFilho-noDeleteButton": {
+        "scope": "javascript",
+        "prefix": "fluig-PaiFilho-noDeleteButton",
+        "body": [
+           "<table tablename='table-name' class='table' nodeletebutton='true'>",
+           "    <thead>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    <thead>",
+           "    <tbody>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    </tbody>",
+           "</table>"
+        ],
+        "description": "Cria tabela Pai x Filho sem o botão de Excluir"
+    },
+    "fluig-PaiFilho-noAddButton": {
+        "scope": "javascript",
+        "prefix": "fluig-PaiFilho-noAddButton",
+        "body": [
+           "<table tablename='table-name' class='table' noaddbutton='true'>",
+           "    <thead>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    <thead>",
+           "    <tbody>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    </tbody>",
+           "</table>"
+        ],
+        "description": "Cria tabela Pai x Filho sem o botão de Adicionar"
+    },
+    "fluig-PaiFilho": {
+        "scope": "javascript",
+        "prefix": "fluig-PaiFilho",
+        "body": [
+           "<table tablename='table-name' class='table'>",
+           "    <thead>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    <thead>",
+           "    <tbody>",
+           "        <tr>",
+           "            <td>",
+           "            </td>",
+           "        </tr>",
+           "    </tbody>",
+           "</table>"
+        ],
+        "description": "Cria tabela Pai x Filho"
+    },
+    "fluig-modal": {
+        "scope": "javascript",
+        "prefix": "fluig-modal",
+        "body": [
+            "var myModal = FLUIGC.modal({",
+            "   title: 'Title',",
+            "   content: '<h1>Modal Content</h1>',",
+            "   id: 'fluig-modal',",
+            "   actions: [{",
+            "      'label': 'Save',",
+            "      'bind': 'data-open-modal',",
+            "   }, {",
+            "          'label': 'Close',",
+            "          'autoClose': true",
+            "   }]",
+            "}, function(err, data) {",
+            "   if(err) {",
+            "       // do error handling",
+            "   } else {",
+            "       // do something with data",
+            "   }",
+            "});"
+        ],
+        "description": "Modal"
+    },
+    "fluig-dataset-constraint": {
+        "scope": "javascript",
+        "prefix": "fluig-dataset-constraint",
+        "body": [
+            "var c1 = DatasetBuilder.createConstraint('const-name', 'value', 'value', ConstraintType.MUST);"
+        ],
+        "description": "Nova constraint para busca no dataset"
+    },
     "fluig-dataset-novo": {
         "scope": "javascript",
         "prefix": "fluig-dataset-novo",

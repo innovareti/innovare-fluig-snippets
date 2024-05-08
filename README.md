@@ -21,7 +21,7 @@ GitHub: https://github.com/innovareti/innovare-fluig-snippets
 * Luiz Postal
 * Daniel Cabral
 * Jorge Brigliadori
-
+* Eduardo Vantini 
 
 ## Requisitos
 
@@ -71,7 +71,12 @@ var dataset = new DatasetBuilder();
 | fluig-envio-email-personalizado | Script para envio de email personalizado em eventos de processo |
 | fluig-selected-zoom-item | Script para realizar ações ao selecionar um registro em um campo Zoom. |
 | fluig-removed-zoom-item | Script para realizar ações ao remover um registro em um campo Zoom. |
-
+| fluig-dataset-constraint | Incluí uma constraint para busca em um dataset |
+| fluig-modal | Incluir script para inserir uma janela modal |
+| fluig-PaiFilho | Incluir tabela Pai x Filho |
+| fluig-PaiFilho-noAddButton | Incluir tabela Pai x Filho sem botão Adicionar |
+| fluig-PaiFilho-noDeleteButton | Incluir tabela Pai x Filho sem o botão Excluir |
+| fluig-PaiFilho-noButtons | Incluir tabela Pai x Filho sem o botão Excluir e sem o botão Adicionar |
 
 
 
